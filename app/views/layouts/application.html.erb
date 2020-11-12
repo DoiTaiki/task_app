@@ -8,8 +8,22 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  
+  <header>
+    <h1>Ruby on Rails スケジュール管理アプリ</h1>
+  </header>
 
   <body>
     <%= yield %>
   </body>
+  
+  <footer>
+    <% require "date" %>
+    <% now_time = DateTime.now %>
+    <p>現在の日時：<%= now_time %></p>
+    <% if current_page?(schedules_path) %>
+      <p>スケジュールの合計：<%= @schedules.count %></p>
+    <% end %>
+  </footer>
+
 </html>
