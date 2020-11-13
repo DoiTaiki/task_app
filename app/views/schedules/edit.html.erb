@@ -1,4 +1,7 @@
 <h2>スケジュール編集</h2>
+
+<%= render "shared/error", obj:@schedule %>
+
 <%= form_for @schedule do |f| %>
   <table>
     <tr>
@@ -7,11 +10,11 @@
     </tr>
     <tr>
       <th><%= f.label :start_day, "開始日" %></th>
-      <td><%= f.datetime_select :start_day %></td>
+      <td><%= f.datetime_select :start_day, minute_step: 10 %></td>
     </tr>
     <tr>
       <th><%= f.label :end_day, "終了日" %></th>
-      <td><%= f.datetime_select :end_day %></td>
+      <td><%= f.datetime_select :end_day, minute_step: 10 %></td>
     </tr>
     <tr>
       <th><%= f.label :all_day, "終日" %></th>

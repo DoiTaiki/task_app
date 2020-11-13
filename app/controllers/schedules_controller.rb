@@ -31,7 +31,7 @@ class SchedulesController < ApplicationController
       flash[:notice] = "IDが「#{@schedule.id}」のスケジュールを更新しました"
       redirect_to schedules_path
     else
-      render edit_schedule_path
+      render "edit" #edit_schedule_path(@schedule.id)ではできなかった？
     end
   end
 
