@@ -6,9 +6,28 @@
   font-family: Arial, san-serif;
 }
 
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+body {
+  padding: 50px 0px;
+}
+
 h1 {
   color: white;
   background-color: red;
+  margin: 0px;
 }
 
 footer {
