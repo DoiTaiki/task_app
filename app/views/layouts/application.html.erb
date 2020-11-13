@@ -19,8 +19,8 @@
   
   <footer>
     <% require "date" %>
-    <% now_time = DateTime.now %>
-    <p>現在の日時：<%= now_time %></p>
+    <% now_time = DateTime.now.new_offset(Rational(9, 24)) %>
+    <p>現在の日時：<%= now_time.to_s(:datetime_jp) %></p>
     <% if current_page?(schedules_path) %>
       <p>スケジュールの合計：<%= @schedules.count %></p>
     <% end %>
