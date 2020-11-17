@@ -1,0 +1,62 @@
+// Place all the styles related to the schedules controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+  font-family: Arial, san-serif;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+body {
+  padding: 50px 0px;
+}
+
+h1 {
+  color: white;
+  background-color: red;
+  margin: 0px;
+}
+
+footer {
+  color: white;
+  background-color: red;
+}
+
+footer p {
+  display: inline-block;
+  padding: 5px;
+}
+
+th {
+  background-color: #FFCCFF;
+  border: 1px solid #000000;
+  padding: 5px;
+}
+
+td {
+  background-color: #FFCCCC;
+  border: 1px solid #000000;
+  padding: 5px;
+}
+
+table {
+  border-collapse:collapse;
+  text-align: center;
+}
+
+.notice {
+  background-color: #CCFFCC;
+}
